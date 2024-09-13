@@ -1,2 +1,4 @@
-# JavaScript_Small_Project_01_Background_Color_Change
+# JavaScript Small Project 01 Background Color Change
 Dynamically change background on click
+
+By switch button we can shift Background color by color name or by color code.
