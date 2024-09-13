@@ -1,0 +1,2 @@
+# JavaScript_Small_Project_01_Background_Color_Change
+Dynamically change background on click
