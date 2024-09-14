@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #000;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+input {
+    border: 2px solid black;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 60px;
+}
