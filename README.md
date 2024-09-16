@@ -7,3 +7,7 @@ By switch button we can shift Background color by color name or by color code.
 # Project 02 - Number Increase and Decrease - Part 1
 Automatically increase and decrease number on click.
 setInterval() is mostly used in this program.
+
+# Project 02 - Number Increase and Decrease - Part 2
+Increase and decrease number each time you click.
+Used forEach() and target the button on clicking.
