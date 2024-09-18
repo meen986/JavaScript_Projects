@@ -1,7 +1,6 @@
 // local testimonial data
 const testimonial = [
     {
-        id: 1,
         name: "Suraj Chauhan",
         userImage: "images/user1.jpg",
         designation: "Frond-end Developer",
@@ -9,7 +8,6 @@ const testimonial = [
         date: "25-January-2024"
     },
     {
-        id: 2,
         name: "Radhika Shipra",
         userImage: "images/user2.jpg",
         designation: "Backend Developer",
@@ -17,7 +15,6 @@ const testimonial = [
         date: "18-February-2024"
     },
     {
-        id: 3,
         name: "Tajendra Singh",
         userImage: "images/user3.jpg",
         designation: "Graphic Designer",
@@ -25,7 +22,6 @@ const testimonial = [
         date: "03-March-2024"
     },
     {
-        id: 4,
         name: "Tajendra Singh",
         userImage: "images/user4.jpg",
         designation: "Motion Graphic Designer",
@@ -57,4 +53,29 @@ const testimonialData = () => {
     message.textContent = data.message
     date.textContent = data.date
 }
-window.addEventListener("DOMContentLoaded",testimonialData)
+
+window.addEventListener("DOMContentLoaded", testimonialData)
+
+// next button
+next.addEventListener("click", () => {
+    contentID++
+    if (contentID > testimonial.length - 1) {
+        contentID = 0
+    }
+    testimonialData()
+})
+
+// previous button
+prev.addEventListener("click", () => {
+    contentID--
+    if (contentID < 0) {
+        contentID = testimonial.length - 1
+    }
+    testimonialData()
+})
+
+// random button
+random.addEventListener("click", () => {
+    contentID = Math.floor(Math.random() * testimonial.length)
+    testimonialData()
+})

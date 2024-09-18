@@ -11,3 +11,7 @@ setInterval() is mostly used in this program.
 # Project 02 - Number Increase and Decrease - Part 2
 Increase and decrease number each time you click.
 Used forEach() and target the button on clicking.
+
+# Project 03 - Testimonial - Part 1
+We created local data in JavaScript file by using array and object.
+On clicking button data is changing accordingly.
