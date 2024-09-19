@@ -22,7 +22,7 @@ const testimonial = [
         date: "03-March-2024"
     },
     {
-        name: "Tajendra Singh",
+        name: "Pooja Bhatia",
         userImage: "images/user4.jpg",
         designation: "Motion Graphic Designer",
         message: "This software development company stands out for its expertise and professionalism. Their team delivers tailored solutions with precision, always meeting deadlines. Excellent communication and customer service make them a trusted partner for efficient, high-quality software development projects.",

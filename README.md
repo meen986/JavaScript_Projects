@@ -15,3 +15,7 @@ Used forEach() and target the button on clicking.
 # Project 03 - Testimonial - Part 1
 We created local data in JavaScript file by using array and object.
 On clicking button data is changing accordingly.
+
+# Project 03 - Testimonial - Part 2
+In this project we added static data in HTML file and manipulating it in JavaScript as a slider.
+And functionalities are same as "Project 03 - Testimonial - Part 2"
