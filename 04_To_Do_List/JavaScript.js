@@ -45,13 +45,11 @@ const save_data = () => {
 
 // Load saved data from localStorage
 const show_data = () => {
-    // const saved_data = localStorage.getItem("data")
-    // if (saved_data){
-    //     to_do_list.innerHTML = localStorage.getItem("data")
-    // }
-    to_do_list.innerHTML = localStorage.getItem("data")
+    const saved_data = localStorage.getItem("data")
+    if (saved_data){
+        to_do_list.innerHTML = localStorage.getItem("data")
+    }
 }
 
 // Run show_data when the page is loaded to populate the list
-// window.addEventListener("DOMContentLoaded",show_data)
-show_data()
+window.addEventListener("DOMContentLoaded",show_data)
