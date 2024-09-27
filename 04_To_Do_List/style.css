@@ -1,0 +1,114 @@
+body {
+    background-color: mediumvioletred;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+* {
+    transition: all 0.5s;
+}
+
+.container {
+    background-color: midnightblue;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.container h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.container ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container ul li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 50px;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    cursor: pointer;
+    list-style: none;
+    margin: 10px 0;
+    position: relative;
+}
+
+.container ul li::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+.container ul li span {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: mediumvioletred;
+    text-align: center;
+    line-height: 30px;
+    display: none;
+    color: #fff;
+}
+
+.container ul li:hover span {
+    display: block;
+}
+
+.container ul li.done,
+.container ul li.done:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.container ul li.done::before {
+    background-color: rgba(199, 21, 133, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.container ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.input_section {
+    width: 100%;
+    display: flex;
+}
+
+.input_section input {
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.input_section button {
+    padding: 20px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: mediumvioletred;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input_section button:hover {
+    background-color: rgb(158, 12, 104);
+}
