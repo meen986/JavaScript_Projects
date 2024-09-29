@@ -25,3 +25,7 @@
 - Select and deselect items
 - Delete items
 - Automatically save in localstorage
+
+# Project 05 - Random Password Generator
+- Random Password Generating with small and capital alphabets, numbers and symbols
+- Copy password on one click
