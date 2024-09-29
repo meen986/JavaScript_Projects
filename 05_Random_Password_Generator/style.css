@@ -30,7 +30,7 @@ body {
     border-radius: 10px;
 }
 
-#password {
+#password_input {
     width: 100%;
     margin-right: 20px;
     padding: 10px 15px;
