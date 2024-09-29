@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: navy;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 10% auto;
+}
+
+.container h1 {
+    color: white;
+    margin-bottom: 20px;
+    color: aquamarine;
+}
+
+.input_box {
+    background-color: white;
+    padding: 20px 30px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#password {
+    width: 100%;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+#generate_password {
+    padding: 15px 20px;
+    font-size: 16px;
+    outline: none;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#copy {
+    cursor: pointer;
+}
