@@ -29,3 +29,6 @@
 # Project 05 - Random Password Generator
 - Random Password Generating with small and capital alphabets, numbers and symbols
 - Copy password on one click
+
+# Project 06 - Age Calculator
+- Here we can calculate age
