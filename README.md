@@ -35,3 +35,4 @@
 
 # Project 07 - Hide and Show Password
 - change input type by clicking on eye button
+- check password strength (weak, medium and strong)

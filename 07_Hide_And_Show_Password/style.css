@@ -6,18 +6,22 @@
 }
 
 body {
-    background-color: rgb(172, 55, 185);
+    background-color: rgb(244, 237, 237);
+}
+
+.container{
+    width: 90%;
+    max-width: 500px;
+    margin: 300px auto;
 }
 
 .input_box {
     background-color: #fff;
-    width: 90%;
-    max-width: 500px;
     border-radius: 10px;
     padding: 10px 20px;
-    margin: 300px auto;
     display: flex;
     align-items: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
 .input_box input {
@@ -32,4 +36,11 @@ body {
 .input_box img {
     width: 35px;
     cursor: pointer;
+}
+
+.strength{
+    margin-top: 10px;
+    text-align: right;
+    font-weight: bold;
+    display: none;
 }
