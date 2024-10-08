@@ -32,3 +32,6 @@
 
 # Project 06 - Age Calculator
 - Here we can calculate age
+
+# Project 07 - Hide and Show Password
+- change input type by clicking on eye button
