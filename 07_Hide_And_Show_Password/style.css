@@ -9,19 +9,19 @@ body {
     background-color: rgb(244, 237, 237);
 }
 
-.container{
+.container {
     width: 90%;
     max-width: 500px;
-    margin: 300px auto;
+    margin: 250px auto;
 }
 
 .input_box {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
 .input_box input {
@@ -38,9 +38,37 @@ body {
     cursor: pointer;
 }
 
-.strength{
-    margin-top: 10px;
+.strength {
     text-align: right;
     font-weight: bold;
     display: none;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #ccc;
+    display: inline-block;
+    position: relative;
+    top: -12px;
+}
+
+.line #strength_line{
+    display: inline-block;
+    height: 3px;
+    width: 1%;
+    transition: all 0.3s;
+    position: absolute;
+    left: 0;
+}
+
+.rules {
+    margin-top: 20px;
+    color: #999;
+}
+
+.rules ul{
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 15px;
 }
