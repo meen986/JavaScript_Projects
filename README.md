@@ -39,3 +39,4 @@
 - password strength bar also added
 
 # Project 08 - Carousel Slider
+- non-stop slider
