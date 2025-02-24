@@ -1,22 +1,46 @@
-body{
+body {
     text-align: center;
     background-color: chartreuse;
     font-family: sans-serif;
 }
-.bgText{
+
+a {
+    text-decoration: none;
+}
+
+.bgText {
     margin-top: 20px;
     display: inline-block;
     background-color: #000;
-    color:#fff;
+    color: #fff;
     padding: 10px 20px;
     margin-bottom: 10px;
     border-radius: 10px;
     font-size: 20px;
 }
-#change_color, #switch_button{
+
+#change_color,
+#switch_button {
     background-color: transparent;
     border: 2px solid #000;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+/* back button */
+.home {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: #333;
+    transition: all 0.3s;
+}
+
+.home:hover {
+    left: 20px;
 }

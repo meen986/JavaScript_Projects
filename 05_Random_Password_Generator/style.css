@@ -4,6 +4,10 @@
     font-family: sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: navy;
 }
@@ -49,4 +53,21 @@ body {
 
 #copy {
     cursor: pointer;
+}
+
+/* back button */
+.home {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: #333;
+    transition: all 0.3s;
+}
+
+.home:hover {
+    left: 20px;
 }

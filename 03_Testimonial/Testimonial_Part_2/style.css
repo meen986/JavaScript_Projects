@@ -3,6 +3,10 @@ body {
     font-family: sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 section {
     background-color: floralwhite;
     max-width: 600px;
@@ -56,5 +60,39 @@ section {
     cursor: pointer;
 }
 
-.item{display: none;}
-.item.active{display: block;}
+.item {
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+/* back button */
+.home,
+.back {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: #333;
+    transition: all 0.3s;
+    width: 120px;
+    text-align: center;
+}
+
+.home {
+    bottom: 10px;
+}
+
+.back {
+    bottom: 80px;
+}
+
+.home:hover,
+.back:hover {
+    left: 20px;
+}

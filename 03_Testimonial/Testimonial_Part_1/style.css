@@ -3,6 +3,10 @@ body {
     font-family: sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 section {
     background-color: aliceblue;
     max-width: 600px;
@@ -54,4 +58,33 @@ section {
     margin-top: 10px;
     padding: 8px 15px;
     cursor: pointer;
+}
+
+/* back button */
+.home,
+.back {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: #333;
+    transition: all 0.3s;
+    width: 120px;
+    text-align: center;
+}
+
+.home {
+    bottom: 10px;
+}
+
+.back {
+    bottom: 80px;
+}
+
+.home:hover,
+.back:hover {
+    left: 20px;
 }

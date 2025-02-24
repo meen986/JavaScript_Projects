@@ -5,6 +5,10 @@ body {
     background-color: #9d1060;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     max-width: 600px;
     margin: 100px auto;
@@ -29,4 +33,33 @@ h1 {
 
 h2 {
     font-size: 60px;
+}
+
+/* back button */
+.home,
+.back {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: #333;
+    transition: all 0.3s;
+    width: 120px;
+    text-align: center;
+}
+
+.home {
+    bottom: 10px;
+}
+
+.back {
+    bottom: 80px;
+}
+
+.home:hover,
+.back:hover {
+    left: 20px;
 }

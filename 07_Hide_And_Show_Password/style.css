@@ -9,6 +9,10 @@ body {
     background-color: rgb(244, 237, 237);
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     width: 90%;
     max-width: 500px;
@@ -53,7 +57,7 @@ body {
     top: -12px;
 }
 
-.line #strength_line{
+.line #strength_line {
     display: inline-block;
     height: 3px;
     width: 1%;
@@ -67,8 +71,25 @@ body {
     color: #999;
 }
 
-.rules ul{
+.rules ul {
     padding-left: 20px;
     margin-top: 10px;
     font-size: 15px;
+}
+
+/* back button */
+.home {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: #333;
+    transition: all 0.3s;
+}
+
+.home:hover {
+    left: 20px;
 }

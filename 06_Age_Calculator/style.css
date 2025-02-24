@@ -4,6 +4,10 @@
     font-family: sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 .container {
     background-image: linear-gradient(to right bottom, #a50097, #720969);
     height: 100vh;
@@ -75,4 +79,21 @@ button#calculate_btn:hover{
     text-align: center;
     border-radius: 0 0 10px 10px;
     display: none;
+}
+
+/* back button */
+.home {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: #333;
+    transition: all 0.3s;
+}
+
+.home:hover {
+    left: 20px;
 }
