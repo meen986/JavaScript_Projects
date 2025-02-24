@@ -37,3 +37,5 @@
 - change input type by clicking on eye button
 - check password strength (weak, medium and strong)
 - password strength bar also added
+
+# Project 08 - Carousel Slider
