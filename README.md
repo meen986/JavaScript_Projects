@@ -1,4 +1,5 @@
 # JavaScript Projects
+- All projects are linked with index.html, find this file in the main folder.
 
 # Project 01 - Background Color Change
 - Dynamically change background on click.
