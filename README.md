@@ -45,3 +45,7 @@
 
 # Project 08 - Carousel Slider
 - non-stop slider
+
+# Project 09 - Multi Item Slider
+- responsive milti item slider
+- bootstrap 5 is used in this
