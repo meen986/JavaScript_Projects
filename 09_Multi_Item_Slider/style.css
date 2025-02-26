@@ -28,13 +28,7 @@ h1 {
 }
 
 .galleryItems {
-    display: inline-flex;
-    gap: 20px;
-}
-
-.gallery .item {
-    width: calc(25%);
-    flex-shrink: 0;
+    width: 100%;
 }
 
 .gallery .item img {

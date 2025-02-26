@@ -5,38 +5,56 @@ const items = galleryItems.children
 const nextBtn = document.getElementById("nextBtn")
 const prevBtn = document.getElementById("prevBtn")
 
-// counter
+// counter and size
 let count = 0
-const size = items[0].clientWidth + 20
+let size = items[0].clientWidth
+let totalWidth = size * items.length
+prevBtn.style.display = "none"
+
+// size modify on resizing
+window.addEventListener("resize", () => {
+    size = items[0].clientWidth
+    totalWidth = size * items.length
+})
 
 // next button function
 nextBtn.addEventListener("click", (e) => {
     e.preventDefault()
-    count++
-    if(count > items.length-5){
-        nextBtn.style.display = "none"
-        prevBtn.style.display = "block"
-        console.log(`next: ${count}`)
-    }else{
-        nextBtn.style.display = "block"
-        prevBtn.style.display = "block"
+    if (count < items.length) {
+        count++
+        changePosition()
     }
-    galleryItems.style.transition = "all 0.3s"
-    galleryItems.style.transform = `translateX(${-size * count}px)`
+
 })
 
 // prev button function
 prevBtn.addEventListener("click", (e) => {
     e.preventDefault()
-    count--
-    if(count < 1){
-        prevBtn.style.display = "none"
-        nextBtn.style.display = "block"
-        console.log(`prev: ${count}`)
-    }else{
-        prevBtn.style.display = "block"
-        nextBtn.style.display = "block"
+    if (count > 0) {
+        count--
+        changePosition()
     }
+
+})
+
+// change position function
+const changePosition = () => {
     galleryItems.style.transition = "all 0.3s"
     galleryItems.style.transform = `translateX(${-size * count}px)`
-})
+
+    // next buttons hide and show
+    let currentWidth = totalWidth + (-size * count)
+    if(currentWidth <= galleryItems.offsetWidth){
+        nextBtn.style.display = "none"
+    }else{
+        nextBtn.style.display = "block"
+    }
+
+    // prev buttons hide and show
+    if(count < 1){
+        prevBtn.style.display = "none"
+    }else{
+        prevBtn.style.display = "block"
+    }
+}
+
