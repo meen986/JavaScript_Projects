@@ -50,3 +50,8 @@
 # Project 09 - Multi Item Slider
 - responsive milti item slider
 - bootstrap 5 is used in this
+
+# Project 10 - Typing Animation
+- Adding each character of word one by one
+- Then deleting each character of work one by one
+- This is infinite loop
