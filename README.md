@@ -55,3 +55,8 @@
 - Adding each character of word one by one
 - Then deleting each character of work one by one
 - This is infinite loop
+
+# Project 11 - Form Validation
+
+## Part 1
+- All Validation will come one by one as a alert box.
