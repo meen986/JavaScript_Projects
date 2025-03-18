@@ -47,6 +47,7 @@ h1 {
     font-size: 45px;
     cursor: pointer;
     top: 40%;
+    display: none;
 }
 
 #nextBtn {

@@ -9,12 +9,16 @@ const prevBtn = document.getElementById("prevBtn")
 let count = 0
 let size = items[0].clientWidth
 let totalWidth = size * items.length
-prevBtn.style.display = "none"
+
+window.addEventListener("load",()=>{
+    hideShowButtons()
+})
 
 // size modify on resizing
 window.addEventListener("resize", () => {
     size = items[0].clientWidth
     totalWidth = size * items.length
+    hideShowButtons()
 })
 
 // next button function
@@ -41,7 +45,12 @@ prevBtn.addEventListener("click", (e) => {
 const changePosition = () => {
     galleryItems.style.transition = "all 0.3s"
     galleryItems.style.transform = `translateX(${-size * count}px)`
+    hideShowButtons()
+    
+}
 
+// buttons hide and show
+const hideShowButtons = () => {
     // next buttons hide and show
     let currentWidth = totalWidth + (-size * count)
     if(currentWidth <= galleryItems.offsetWidth){
@@ -57,4 +66,3 @@ const changePosition = () => {
         prevBtn.style.display = "block"
     }
 }
-
