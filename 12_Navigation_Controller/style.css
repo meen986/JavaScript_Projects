@@ -68,3 +68,21 @@ nav ul li a.active {
 .wrap:nth-child(6) {
     background-color: thistle;
 }
+
+/* back button */
+.home {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: #333;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.home:hover {
+    left: 20px;
+}
