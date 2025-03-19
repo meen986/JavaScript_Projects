@@ -58,7 +58,7 @@ nav ul li a.active {
 }
 
 .wrap:nth-child(4) {
-    background-color: honeydew;
+    background-color: greenyellow;
 }
 
 .wrap:nth-child(5) {
@@ -67,6 +67,10 @@ nav ul li a.active {
 
 .wrap:nth-child(6) {
     background-color: thistle;
+}
+
+.wrap:nth-child(7) {
+    background-color: cornflowerblue;
 }
 
 /* back button */

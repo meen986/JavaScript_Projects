@@ -13,9 +13,19 @@ nav.forEach((link, index) => {
 
 // scroll event
 document.addEventListener("scroll", (e) => {
+    wrapPositionCalculation()
+})
+
+// on page load
+document.addEventListener("DOMContentLoaded",()=>{
+    wrapPositionCalculation()
+})
+
+// wrap position calculation
+const wrapPositionCalculation = () => {
     wrap.forEach((page, index) => {
         let pagePosition = page.getBoundingClientRect()
-
+    
         if (pagePosition.top < 200) {
             nav.forEach((link) => {
                 link.classList.remove("active")
@@ -25,4 +35,4 @@ document.addEventListener("scroll", (e) => {
             nav[index].classList.remove("active")
         }
     })
-})
+}
