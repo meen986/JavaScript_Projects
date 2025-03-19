@@ -60,3 +60,7 @@
 
 ## Part 1
 - All Validation will come one by one as a alert box.
+
+# Project 12 - Navigation Controller
+- clicking on any anchor tag from the nav, you reach on the related section from the same page.
+- as you go on different sections, nav anchor will active accordingly.
